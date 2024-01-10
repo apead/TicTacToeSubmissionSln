@@ -106,7 +106,7 @@ namespace TicTacToeSubmissionConole
                     }
                 }
 
-                _positions[int.Parse(row),int.Parse(column)] = 0;
+                _positions[int.Parse(row),int.Parse(column)] = (int) PlayerEnum.X;
 
                 _boardRenderer.AddMove(int.Parse(row), int.Parse(column), PlayerEnum.X, true);
 
@@ -142,7 +142,7 @@ namespace TicTacToeSubmissionConole
 
                     }
                     
-                    _positions[int.Parse(row), int.Parse(column)] = 1;
+                    _positions[int.Parse(row), int.Parse(column)] = (int) PlayerEnum.O;
                     _boardRenderer.AddMove(int.Parse(row), int.Parse(column), PlayerEnum.O, true);
                 }
 
